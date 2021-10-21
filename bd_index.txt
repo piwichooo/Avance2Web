@@ -1,0 +1,22 @@
+
+-------------------------------------------------------------
+create database sesion;
+
+use sesion;
+
+create table usuarios(
+codUsu char(4) primary key,
+nombre varchar(60) not null,
+edad int not null,
+perfil varchar(30) not null,
+pass varchar(30) not null);
+
+insert into usuarios values('U111','Milagros',20,'admin','e111');
+insert into usuarios values('U222','John',20,'empleado','e222');
+insert into usuarios values('U333','Fabricio',20,'empleado','e333');
+insert into usuarios values('U444','Fiorella',20,'cliente','e444');
+insert into usuarios values('U555','Sebastian',20,'cliente','e555');
+
+select * from usuarios;
+
+--------------------------------------------------------
